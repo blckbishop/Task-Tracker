@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+body {
+  
+  
+  font-family: 'Nabla', cursive;
+  font-weight: bold;
+  text-align: center;
+}
+
+#gradient {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#outer {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.blur {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-color: goldenrod;
+  border: 1px solid rgba(255,255,255,0.2);
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
+}
+
+#task-div {
+  display: inline;
+}
+
+#site-name {
+  font-size: 64px;
+  margin-top: 60px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#save-btn,
+#increment-btn {
+  transition: opacity 0.9s;
+  cursor: pointer;
+  background: whitesmoke;
+  color: #252525;
+  
+}
+
+
+#save-btn:hover,
+#increment-btn:hover {
+  opacity: 0.7;
+}
+
+
+
+
